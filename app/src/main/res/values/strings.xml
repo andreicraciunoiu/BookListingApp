@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BookListing App</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="publisher">Publisher</string>
+    <string name="page_count">Page count</string>
+    <string name="type_title_here"> Title here</string>
+    <string name="find_books_button">Find books</string>
+    <string name="no_data_found">No data found</string>
+    <string name="content_description">Image used for example</string>
+</resources>

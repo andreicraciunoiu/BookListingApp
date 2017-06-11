@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/layout_margin"
+    android:paddingLeft="@dimen/layout_margin"
+    android:paddingRight="@dimen/layout_margin"
+    android:paddingStart="@dimen/layout_margin">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/content_description"
+            android:padding="6dp"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="@dimen/padding_dimension"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/title_dimension"
+            tools:text="@string/title" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/padding_dimension"
+            android:paddingStart="@dimen/padding_dimension"
+            android:textColor="@color/textColorGray"
+            android:textSize="@dimen/text_size"
+            tools:text="@string/author" />
+
+        <TextView
+            android:id="@+id/publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/padding_dimension"
+            android:paddingStart="@dimen/padding_dimension"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/text_size"
+            tools:text="@string/publisher" />
+
+        <TextView
+            android:id="@+id/page_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_dimension"
+            android:paddingEnd="@dimen/padding_dimension"
+            android:paddingStart="@dimen/padding_dimension"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/text_size"
+            tools:text="@string/page_count" />
+    </LinearLayout>
+</LinearLayout>
