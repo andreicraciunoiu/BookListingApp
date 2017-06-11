@@ -1,6 +1,6 @@
 package com.example.android.booklistapp;
 
- class Book {
+class Book {
     private final String thumbnail;
     private final String title;
     private final StringBuilder author;
@@ -8,7 +8,7 @@ package com.example.android.booklistapp;
     private final String pageCount;
     private final String url;
 
-     Book(String thumbnail, String title, StringBuilder author, String publisher, String pageCount, String url) {
+    Book(String thumbnail, String title, StringBuilder author, String publisher, String pageCount, String url) {
         this.thumbnail = thumbnail;
         this.title = title;
         this.author = author;
@@ -16,9 +16,11 @@ package com.example.android.booklistapp;
         this.pageCount = pageCount;
         this.url = url;
     }
-    String getThumbnail(){
+
+    String getThumbnail() {
         return thumbnail;
     }
+
     String getTitle() {
         return title;
     }
